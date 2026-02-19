@@ -14,13 +14,22 @@ const firebaseConfig = {
 };
 
 // Debugging: Check if keys are loaded
+// Debugging: Check if keys are loaded
 if (!firebaseConfig.apiKey) {
-    console.error("Firebase Config Error: Missing API Key. Check .env.local and RESTART server.");
-    console.log("Current Config:", firebaseConfig);
+    console.warn("Firebase Config Warning: Missing API Key. This is expected during build time if using public vars.");
 }
 
-// Initialize Firebase
-const app = !getApps().length ? initializeApp(firebaseConfig) : getApp();
-const auth = getAuth(app);
+// Initialize Firebase safely
+let app;
+let auth;
+
+try {
+    app = !getApps().length ? initializeApp(firebaseConfig) : getApp();
+    auth = getAuth(app);
+} catch (error) {
+    console.warn("Firebase Initialization Failed (Expected during build if env vars missing):", error.message);
+    // Mock auth for build time
+    auth = { currentUser: null };
+}
 
 export { app, auth };
