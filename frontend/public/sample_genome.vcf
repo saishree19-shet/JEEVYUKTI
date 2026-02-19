@@ -1,0 +1,15 @@
+##fileformat=VCFv4.2
+##fileDate=20240219
+##source=PharmaGuard_Synthetic_Generator
+##reference=GRCh37
+##INFO=<ID=RS,Number=1,Type=String,Description="dbSNP ID">
+##FORMAT=<ID=GT,Number=1,Type=String,Description="Genotype">
+#CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO	FORMAT	SAMPLE_1
+10	96522463	rs4244285	G	A	.	PASS	.	GT	1/1
+10	96522464	rs4986893	G	A	.	PASS	.	GT	0/0
+22	42522613	rs3892097	C	T	.	PASS	.	GT	0/1
+22	42526694	rs1065852	G	A	.	PASS	.	GT	0/0
+10	96702047	rs1799853	C	T	.	PASS	.	GT	1/1
+12	21331549	rs4149056	T	C	.	PASS	.	GT	0/1
+6	18130918	rs1800460	G	A	.	PASS	.	GT	0/0
+1	98062078	rs3918290	G	A	.	PASS	.	GT	0/0

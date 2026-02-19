@@ -1,0 +1,88 @@
+@import "tailwindcss";
+
+:root {
+  --foreground-rgb: 74, 85, 104;
+  /* Slate 700 */
+  --background-rgb: 247, 244, 242;
+  /* Cream/Beige Background */
+  --primary-accent: 255, 133, 51;
+  /* Orange/Coral */
+  --secondary-accent: 56, 189, 248;
+  /* Sky Blue */
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: rgb(var(--background-rgb));
+  font-family: 'Outfit', sans-serif;
+  /* Recommended for this look */
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+
+/* Health+ Card Style */
+.health-card {
+  background: white;
+  border-radius: 24px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.02);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.health-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.04);
+}
+
+/* Sidebar Active Item */
+.nav-item-active {
+  color: #0d9488;
+  /* Teal 600 */
+  border-right: 3px solid #0d9488;
+  background: linear-gradient(90deg, transparent 0%, rgba(13, 148, 136, 0.05) 100%);
+}
+
+/* Search Bar Input */
+.search-input {
+  background: #f1f5f9;
+  border: none;
+  border-radius: 12px;
+}
+
+.search-input:focus {
+  background: white;
+  box-shadow: 0 0 0 2px rgba(13, 148, 136, 0.2);
+}
+
+/* Status Badges */
+.badge-orange {
+  background: #fff7ed;
+  color: #c2410c;
+}
+
+.badge-blue {
+  background: #eff6ff;
+  color: #1d4ed8;
+}
+
+.badge-teal {
+  background: #f0fdfa;
+  color: #0f766e;
+}
+
+/* DNA / Body Graphic Container */
+.body-graphic-container {
+  background: #ecfeff;
+  border-radius: 20px;
+}

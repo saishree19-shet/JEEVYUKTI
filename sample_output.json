@@ -1,0 +1,70 @@
+{
+    "phenotypeProfile": {
+        "CYP2C19": "Poor Metabolizer",
+        "CYP2D6": "Poor Metabolizer",
+        "CYP2C9": "Poor Metabolizer",
+        "SLCO1B1": "Decreased Function",
+        "TPMT": "Normal Metabolizer",
+        "DPYD": "Normal Metabolizer"
+    },
+    "riskReport": [
+        {
+            "gene": "CYP2C19",
+            "drug": "Clopidogrel",
+            "phenotype": "Poor Metabolizer",
+            "risk": "High",
+            "recommendation": "Avoid Clopidogrel. Use Prasugrel or Ticagrelor.",
+            "mechanism": "Reduced formation of active metabolite leads to efficacy failure.",
+            "alternatives": [
+                "Prasugrel",
+                "Ticagrelor"
+            ]
+        },
+        {
+            "gene": "CYP2C19",
+            "drug": "Citalopram",
+            "phenotype": "Poor Metabolizer",
+            "risk": "High",
+            "recommendation": "Reduce dose by 50% or avoid.",
+            "mechanism": "Increased risk of QT prolongation due to high drug levels.",
+            "alternatives": [
+                "Sertraline"
+            ]
+        },
+        {
+            "gene": "CYP2D6",
+            "drug": "Codeine",
+            "phenotype": "Poor Metabolizer",
+            "risk": "High",
+            "recommendation": "Avoid Codeine. Use non-opioid or Tramadol (caution).",
+            "mechanism": "Prodrug failure: No conversion to Morphine (analgesic).",
+            "alternatives": [
+                "Ibuprofen",
+                "Gabapentin"
+            ]
+        },
+        {
+            "gene": "CYP2C9",
+            "drug": "Warfarin",
+            "phenotype": "Poor Metabolizer",
+            "risk": "High",
+            "recommendation": "Lower starting dose significantly. Frequent INR monitoring.",
+            "mechanism": "Reduced clearance increases bleeding risk.",
+            "alternatives": [
+                "DOACs (Apixaban, Rivaroxaban)"
+            ]
+        },
+        {
+            "gene": "SLCO1B1",
+            "drug": "Simvastatin",
+            "phenotype": "Decreased Function",
+            "risk": "High",
+            "recommendation": "Prescribe lower dose (max 20mg) or switch statin.",
+            "mechanism": "High plasma levels increase Myopathy/Rhabdomyolysis risk.",
+            "alternatives": [
+                "Rosuvastatin",
+                "Atorvastatin"
+            ]
+        }
+    ]
+}
