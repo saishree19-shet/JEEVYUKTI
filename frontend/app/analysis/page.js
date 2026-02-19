@@ -121,7 +121,7 @@ export default function AnalysisPage() {
         if (drugInput) formData.append('drug', drugInput);
 
         try {
-            const response = await fetch('http://localhost:5000/api/vcf/upload', {
+            const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL || 'http://localhost:5000'}/api/vcf/upload`, {
                 method: 'POST',
                 body: formData,
             });

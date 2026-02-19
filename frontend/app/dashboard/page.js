@@ -73,7 +73,7 @@ export default function Dashboard() {
         setChatInput('');
 
         try {
-            const response = await fetch('http://localhost:5000/api/ai/chat', {
+            const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL || 'http://localhost:5000'}/api/ai/chat`, {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({
@@ -101,7 +101,7 @@ export default function Dashboard() {
 
         try {
             // Updated to point to backend API
-            const response = await fetch('http://localhost:5000/api/vcf/upload', {
+            const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL || 'http://localhost:5000'}/api/vcf/upload`, {
                 method: 'POST',
                 body: formData,
             });
